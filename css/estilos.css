@@ -1,0 +1,404 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+body{
+    background-color:#ffed86;
+	font-family: "Rethink Sans", sans-serif;
+	font-size: 20px;
+}
+header{
+	position: sticky;
+	top: 0;	
+	padding-top: 2%;
+	padding-right: 7%;
+	padding-bottom: 2%;
+	padding-left: 7%;
+	display: flex;
+	justify-content: space-between;
+    background-color: #f5f5dc;
+}
+a{ 
+	text-decoration: none;
+	color: black;
+}
+.icon { display: none; }
+section{
+	max-width: 1300px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+p{
+	text-align: justify;
+}
+h1{
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 30px;	
+	margin-bottom: 30px;
+	font-size: 40px;
+}
+h4{
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	text-align: center;
+}
+article{
+	/*width: 1100px;*/
+	padding: 50px;
+	padding-top: 20px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	margin-left: 50px;
+	margin-right: 50px;
+	background-color: #fff;
+	scroll-margin: 120px;
+}
+
+/*Barra de navegación*/
+nav ul{
+	margin-top: 1%;
+}
+nav ul li{
+	display: inline-block;
+}
+nav ul li a{
+	font-size: 1.2rem;
+	padding: 20px;
+	text-transform: uppercase;
+}
+nav ul li a:hover{
+	color:#F6C324;
+	font-weight: 800;
+}
+/*Desplegable*/
+nav ul li ul{
+	position: absolute;
+	display: none;
+	list-style: none;
+	background-color: rgb(245, 245, 220, .9);
+}
+nav ul li:hover ul{
+	display: block;
+}
+nav ul li ul li a{
+	display: block;
+	padding: 10px;
+	
+}
+.menu-personajes{
+	width: 200px;
+}
+.menu-temporadas{
+	width: 150px;
+}
+
+/*Inicio*/
+.principal{
+	width: auto;
+	height: auto;
+	padding: 10px 10px;
+	display: contents;
+	justify-content: center;
+	align-items: center;
+}
+.slider-frame{
+	width: 854px;
+	height: auto;
+	margin: 20px auto 0;
+	overflow: hidden;
+	
+}
+.slider-frame ul{
+	display: flex;
+	padding: 0;
+	width: 400%;
+	animation: slide 20s infinite alternate ease-in-out;
+}
+.slider-frame ul li{
+	list-style: none;
+	width: 100%;
+}
+.slider-frame img{
+	width: 100%;
+}
+@keyframes slide{
+	0% {margin-left: 0%}
+	20% {margin-left: 0%}	
+
+	25% {margin-left: -100%}
+	45% {margin-left: -100%}	
+
+	50% {margin-left: -200%}
+	70% {margin-left: -200%}
+	
+	75% {margin-left: -300%}
+	100% {margin-left: -300%}
+}
+.titulo{
+	font-size: 1.5rem;
+	margin: 20px;
+}
+.creador{
+	display: flex;
+	align-items: center;
+}
+.creador img{
+	margin-left: 20px;
+	border-radius: 20px;
+}
+.elenco{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.actores{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 20px;
+}
+.actores img{
+	border-radius: 20px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+.actores h5{
+	font-size: 20px;
+	text-align: center;
+	margin: 10px;
+	margin-bottom: 5px;
+}
+.actores p{
+	font-size: 15px;
+	color: #B9B7BD;
+	text-align: center;
+}
+
+/*Temporadas*/
+/*.temporadas article{
+	height: 350px;	
+}*/
+/*.temporada-impar div img{
+	float:left;
+	margin-right: 20px;
+	margin-bottom: 50px;
+}
+.temporada-par div img{
+	float:right;
+	margin-left: 20px;
+	margin-bottom: 50px;
+}*/
+.temporada-par div, .temporada-impar div{
+	display: flex;
+	justify-content: center	;
+}
+.temporada-par div img{
+	margin-left: 20px;
+}
+.temporada-impar div img{
+	margin-right: 20px;
+}
+
+/*Personajes*/
+.personajes div{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-bottom: 10px;
+}
+.imagenes-personajes{
+	border-radius: 20px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*Galeria*/
+.galeria{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.galeria a{
+	padding: 10px
+}
+.galeria a img{
+	border-radius: 20px;
+	box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
+
+/*Prensa*/
+.critica p span{
+	color: #B9B7BD;
+}
+.medio{
+	text-align: left;
+}
+.critica{
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+.critica div{
+	display: flex;
+	align-items: center;
+}
+.critica img{
+	max-width: 3rem;
+	width: 100%;
+	height: auto;
+	margin: 10px;
+}
+
+/*Contacto*/
+form{
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	margin: 40px;
+	margin-top: 20px;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	border-radius: 20px;
+}
+input, textarea{
+	padding: 15px;	
+	border-radius: 20px;
+	margin-bottom: 20px;
+	background-color: #F7F9A7;
+	border: 2px solid #FFF387;
+}
+label{
+	padding: 10px;
+}
+button{
+	font-size: 20px;
+	font-family: "Rethink Sans", sans-serif;
+	background-color: #FFF387;
+	border: 0;
+	border-radius: 20px;
+	padding: 15px;
+	margin: 20px;
+	cursor: pointer;
+}
+.contacto div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.contacto div img{
+	max-width: 2.5rem;
+	width: 200%;
+	height: auto;
+	margin: 10px;
+}
+
+/*Footer*/
+footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 300px;
+	background-color: beige;
+}
+footer div img{
+	max-width: 2.5rem;
+	width: 200%;
+	height: auto;
+	margin-right: 10px;
+	margin-bottom: 40px;
+	margin-top: 20px;
+}
+
+/*Media Queries*/
+@media (max-width: 480px) { 
+	header{
+		align-items: center;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		position: sticky;
+		top: 0;
+		z-index: 1;
+	}
+	header div, header a {
+		flex: 1 0 50%;
+	}
+	header nav {
+		flex-basis: 100%;
+	}
+	.icon {
+		display: block;
+		padding-right: 0.6rem;
+		text-align: right;
+	}
+	nav ul {
+		display: none;
+	}
+	nav.responsive ul {
+		display: block;
+	}
+	nav.responsive ul li {
+		display: block;
+		text-align: center;
+		padding: 0.5rem;
+	}
+	nav.responsive ul li a {
+		padding-right: 0;
+	}
+	section{
+		max-width: 480px;
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.slider-frame{
+		width: auto;
+		height: auto;
+		margin: 20px auto 0;
+		overflow: hidden;
+		
+	}
+	article{
+		width: 90%;
+	}
+	/*
+	.principal{
+		height: 250px;
+		padding: 10%;
+	}
+	.secundario{
+		margin-top: 1%;
+		display: block;
+	}
+	.secundario div{
+		margin-right: auto;
+		margin-left: auto;
+		width: 90%;
+	}
+	.secundario div a img{
+		margin-bottom: 1rem;
+	}*/
+	h1{
+		font-size: 1.5rem;
+	}
+	h4{
+		font-size: 1rem;
+	}
+	p{
+		font-size: 0.8rem;
+	}
+	footer{
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+	}
+	footer div img{
+		margin-bottom: 20px;
+	}
+	footer div p{
+		margin-bottom: 10px;
+	}
+	}
+
