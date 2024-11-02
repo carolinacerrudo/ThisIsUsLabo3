@@ -349,6 +349,11 @@ footer div img{
 	nav.responsive ul li ul{
 		display: none;
 	}
+	article{
+		margin-left: 20px;
+		margin-right: 20px;
+		padding: 30px;
+	}
 	section{
 		max-width: 480px;
 		width: 100%;
@@ -362,24 +367,52 @@ footer div img{
 		overflow: hidden;
 		
 	}
-	
-	/*
-	.principal{
-		height: 250px;
-		padding: 10%;
+	.creador{
+		flex-direction: column-reverse;		
 	}
-	.secundario{
-		margin-top: 1%;
-		display: block;
+	.creador img{
+		width: 50%;
+		margin-bottom: 20px;
 	}
-	.secundario div{
-		margin-right: auto;
-		margin-left: auto;
-		width: 90%;
+	.actores{
+		width: 35%;
 	}
-	.secundario div a img{
-		margin-bottom: 1rem;
-	}*/
+	.temporada-impar div img, .temporada-par div img{
+		width: 50%;
+	}
+	.temporada-impar div{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.temporada-par div{
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.personajes article{
+		padding: 20px;
+	}
+	.personajes div{
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-bottom: 10px;
+	}
+	.imagenes-personajes{
+		width: 50%;
+	}
+	.galeria{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		padding: 20px;
+	}
+	.galeria a img{
+		width: 80%;
+	}
+	form{
+		margin:10px;
+		padding: 20px;
+	}
 	h1{
 		font-size: 1.5rem;
 	}
