@@ -375,11 +375,8 @@ footer div img{
 		margin-bottom: 20px;
 	}
 	.elenco a{
-		width: 50%;
+		width: 45%;
 	}
-	/*.actores{
-		width: 35%;
-	}*/
 	.temporada-impar div img, .temporada-par div img{
 		width: 50%;
 	}
